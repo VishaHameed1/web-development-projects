@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #ffffff;
+    font-weight: 600;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.output {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.output input {
+    width: 100%;
+    background: transparent;
+    color: #00ffb3;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.output input:focus {
+    outline: none;
+}
+
+.input .btn {
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 55px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.input .btn:hover {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+}
+
+#calculate {
+    background-color: #00b894 !important;
+    color: #fff;
+}
+
+.input .btn:nth-child(5n) {
+    background-color: #ff9f43;
+    color: #fff;
+}
+
+.input .btn:active {
+    transform: scale(0.95);
+}
+
+/* Special buttons */
+#toggleRadDeg {
+    background-color: #0984e3;
+}
+
+#toggleSecond {
+    background-color: #6c5ce7;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Ensure calculator fits nicely without scroll */
+.container {
+    max-width: 450px;
+}
+
+.card-body {
+    background: #1b1b1b;
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
