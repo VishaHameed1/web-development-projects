@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Total Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        h3 { color: #007BFF; }
+        ul { list-style-type: none; padding: 0; }
+        li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dotted #eee; }
+        li strong { color: #333; }
+        button { padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; }
+        #totalOutput { margin-top: 20px; padding: 15px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; font-size: 1.2em; font-weight: bold; color: #155724; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Product Total Calculator</h2>
+        
+        <h3>Available Products:</h3>
+        <ul id="productList"></ul>
+        
+        <button onclick="calculateTotal()">Calculate Total</button>
+
+        <div id="totalOutput"></div>
+    </div>
+
+    <script src="product_logic.js"></script>
+</body>
+</html>
