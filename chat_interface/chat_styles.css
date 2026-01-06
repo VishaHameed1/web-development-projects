@@ -1,0 +1,172 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #ededed; /* Light gray background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.chat-container {
+    width: 90%;
+    height: 90%;
+    max-width: 1400px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Bar */
+.header-bar {
+    background-color: #008069; /* WhatsApp Green */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Main Content (Sidebar + Chat Area) */
+.chat-main {
+    display: flex;
+    flex-grow: 1; /* Takes up remaining vertical space */
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 30%; /* Appropriate width for contact list */
+    border-right: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    overflow-y: auto;
+}
+
+.contact {
+    display: flex;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact:hover {
+    background-color: #ebebeb;
+}
+
+.contact.active {
+    background-color: #e6e6e6; /* Highlight active chat */
+}
+
+.profile-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    /* Placeholder style for image tag requirement */
+    background-color: #00a884;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>');
+}
+
+.contact-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info .last-message-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Right Chat Area */
+.chat-area {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('chat_background.jpg'); /* Optional: For classic chat background */
+    background-color: #ece5dd;
+    flex-grow: 1;
+}
+
+.message-display {
+    flex-grow: 1;
+    padding: 20px 80px; /* Wider padding for better reading */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 65%;
+    position: relative;
+    font-size: 0.95em;
+    word-wrap: break-word;
+}
+
+.message p {
+    margin: 0;
+}
+
+.timestamp {
+    font-size: 0.65em;
+    color: #666;
+    margin-top: 3px;
+    display: block;
+    text-align: right;
+}
+
+/* Instructor Message (Left-aligned, Light Gray) */
+.instructor {
+    background-color: #ffffff; /* Light Gray Background */
+    align-self: flex-start;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+/* Student Message (Right-aligned, Light Green) */
+.student {
+    background-color: #dcf8c6; /* Light Green Background */
+    align-self: flex-end;
+    color: #111;
+}
+
+/* Message Input Area (Design Only) */
+.message-input {
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.message-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.send-button {
+    background-color: #008069;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
